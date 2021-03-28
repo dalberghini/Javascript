@@ -29,12 +29,9 @@ function runFilter() {
         Object.entries(filtering).forEach(([key,value])=>{
             var cell = row.append("td");
             cell.text(value);
-            console.log(value);
         });
     });
-
     if (inputValue === "") {
         create_table(tableData);
     }
 }
-
